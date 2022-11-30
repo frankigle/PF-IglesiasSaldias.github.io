@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Fasthand", cursive;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+header {
+  background-color: #264653;
+  background-image: url(../imgProyecto/pirineosPano.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+header .logo img {
+  padding: auto;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+}
+header .logo h2 {
+  font-family: "Fasthand";
+  display: none;
+}
+header .logo .desktop {
+  display: none;
+}
+
+.contenedor {
+  background-color: #e9c46a;
+  padding-bottom: 30px;
+}
+.contenedor #carouselExampleIndicators {
+  padding-top: 5px;
+}
+.contenedor h1 {
+  font-family: "Fasthand";
+  text-align: center;
+}
+.contenedor p {
+  text-align: center;
+  font-size: 18px;
+}
+.contenedor .grid {
+  display: grid;
+  grid-template-areas: "equipo historia" "ruta contacto";
+}
+.contenedor .grid .hojaDeRuta {
+  grid-area: ruta;
+}
+.contenedor .grid .contacto {
+  grid-area: contacto;
+}
+.contenedor .grid .historia {
+  grid-area: historia;
+}
+.contenedor .grid .equipo {
+  grid-area: equipo;
+}
+.contenedor .grid .flexItem {
+  background-color: #e76f51;
+  overflow: auto;
+  display: inline;
+  width: auto;
+  height: 200px;
+  text-align: center;
+  border: 5px solid #2a9d8f;
+  margin: 5px;
+}
+.contenedor .grid .flexItem h3 {
+  font-weight: bold;
+  font-family: "Fasthand";
+  font-size: 30px;
+  color: black;
+}
+.contenedor .grid .flexItem img {
+  display: inline;
+  width: auto;
+  height: 150px;
+}
+.contenedor .grid .flexItem p {
+  font-size: 10px;
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */

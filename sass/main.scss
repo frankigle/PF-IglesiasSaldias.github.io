@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//Reglas Generales
+h1{
+    font-family: 'Fasthand', cursive;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+// HEADER
+
+header{
+    background-color: #264653;
+    background-image: url(../imgProyecto/pirineosPano.jpg) ;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    .logo{
+        img{
+            padding: auto;
+            width: 150px;
+            height: 150px;
+            align-items: center;
+        }
+        h2{
+            font-family: 'Fasthand';
+            display: none;
+        }
+        .desktop{
+            display: none;
+        }
+
+
+    }
+}
+
+
+// Main
+
+
+    
+.contenedor{
+    background-color: #e9c46a;
+    padding-bottom: 30px;  
+    #carouselExampleIndicators{
+        padding-top: 5px;
+    }
+    h1{
+        font-family: 'Fasthand';
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "equipo historia"
+        "ruta contacto";
+        .hojaDeRuta{
+            grid-area: ruta;
+        }
+        .contacto{
+            grid-area: contacto;
+        }
+        .historia{
+            grid-area: historia;
+        }
+        .equipo{
+            grid-area: equipo;
+        }
+        .flexItem {
+            background-color: #e76f51;
+            overflow: auto;
+            display: inline;
+            width: auto;
+            height: 200px;
+            text-align: center;
+            border: 5px solid #2a9d8f;
+            margin: 5px;
+            h3{
+                font-weight: bold;
+                font-family: 'Fasthand';
+                font-size: 30px;
+                color: black;
+            }
+            img{
+                display: inline;
+                width: auto;
+                height: 150px;
+            }
+            p{
+                font-size: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+}
+
+
+
+//Equipo
+
+

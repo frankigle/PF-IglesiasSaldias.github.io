@@ -1,4 +1,4 @@
-/* reset */
+/* /* reset */
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ header .logo img{
 header .logo h2{
     font-family: 'Fasthand';
     display: none;
-}
+} */
 /* GENERAL RULES */
 h1{
     font-family: 'Fasthand', cursive;
@@ -47,22 +47,20 @@ p{
 }
 /* Main */
 #carouselExampleIndicators{
-    padding-top: 5px;
+    
 }
 
-.container {
+.contenedor {
     background-color: #e9c46a;
     padding-bottom: 30px;  
 
 }
-.container h1{
+.contenedor h1{
     font-family: 'Fasthand';
     text-align: center;
 }
-.container h1{
 
-}
-.container p{
+.contenedor p{
     text-align: center;
     font-size: 18px;
 }
@@ -396,7 +394,11 @@ h5{
 
 
 }
-
+@media (min-width: 992px){
+.container{
+    width: 100%;
+}
+}
 
 @media (min-width: 1024px){
 
