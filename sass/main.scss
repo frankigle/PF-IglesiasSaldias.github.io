@@ -5,7 +5,7 @@
 }
 
 
-//Reglas Generales
+/* REGLAS GENERALES */
 h1{
     font-family: 'Fasthand', cursive;
 }
@@ -15,7 +15,7 @@ p{
 
 
 
-// HEADER
+/* HEADER */
 
 header{
     background-color: #264653;
@@ -43,7 +43,7 @@ header{
 }
 
 
-// Main
+/* MAIN */
 
 
     
@@ -108,7 +108,204 @@ header{
 }
 
 
+/* EQUIPO */
 
-//Equipo
+
+#equipoFlex{
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .secEquipo{
+        width: 350px;
+        height: 350px;
+        overflow: scroll;
+        background-color: #e76f51;
+        border: 5px solid #2a9d8f;
+        margin: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            font-family: 'Sono', sans-serif;
+            text-align: center;
+        }
+        .fotosEquipo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                gap: 3px;
+                padding: 5px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+/* HISTORIA */
+
+#historiaMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9c46a;    padding-bottom: 30px;
+    .todoComenzo{
+        background-color: #e76f51;
+        border: 8px solid #2a9d8f;
+        h2{
+            font-family: 'Sono', sans-serif;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding: 0 20px;
+        }
+        .gridHistoria{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            img:hover{
+                transform: scale(2);
+            }
+        }
+
+    }
+}
+
+
+/* HOJA DE RUTA */
+
+
+#gridRuta{
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+    
+    .rutaItem{
+        background: radial-gradient(#e9c46a,#e76f51 );
+        border: 8px solid #2a9d8f;
+        margin: 5px;
+        h2{
+            text-align: center;
+        }
+        .mapa iframe{
+            width: 250px;
+            height: 250px;
+        }
+        
+    }
+    .rutaPrincipal{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow:visible;
+    }
+    .trayecto1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .trayecto2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .trayecto3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .trayecto4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .comentario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color:#e76f51;
+        grid-area: comentario;
+    }
+    
+}
+
+
+/* CONTACTO */
+
+#contacto{
+    background-color: #e9c46a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .formulario{
+        width: 400px;
+        background-color: #e9c46a;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .flexContacto{
+    
+            font-size: 15px;
+            border: 8px solid #2a9d8f;
+            margin: 5px;
+            background-color: #e76f51;
+        }
+    }
+
+}
+
+
+/* FOOTER */
+
+
+.footer{
+    display: flex;
+    background-color: gainsboro;
+    border: 10px solid #2a9d8f;
+    flex-flow: row;
+    justify-content: space-around;
+    .contactoFoot{
+        font-size: 15px;
+        h4{
+            text-align: center;
+            /* background-color: ; */
+        } 
+    }
+    & .ulFoot{
+        a{
+            text-decoration: none;
+        }
+    }
+    & .redesSociales {
+        a{
+            text-decoration: none;
+        }
+
+    }
+}
+
 
 

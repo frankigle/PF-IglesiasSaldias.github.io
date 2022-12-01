@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* REGLAS GENERALES */
 h1 {
   font-family: "Fasthand", cursive;
 }
@@ -12,6 +13,7 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
+/* HEADER */
 header {
   background-color: #264653;
   background-image: url(../imgProyecto/pirineosPano.jpg);
@@ -33,6 +35,7 @@ header .logo .desktop {
   display: none;
 }
 
+/* MAIN */
 .contenedor {
   background-color: #e9c46a;
   padding-bottom: 30px;
@@ -88,4 +91,173 @@ header .logo .desktop {
 .contenedor .grid .flexItem p {
   font-size: 10px;
   overflow: hidden;
+}
+
+/* EQUIPO */
+#equipoFlex {
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#equipoFlex .secEquipo {
+  width: 350px;
+  height: 350px;
+  overflow: scroll;
+  background-color: #e76f51;
+  border: 5px solid #2a9d8f;
+  margin: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#equipoFlex .secEquipo h2 {
+  font-family: "Sono", sans-serif;
+  text-align: center;
+}
+#equipoFlex .secEquipo .fotosEquipo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#equipoFlex .secEquipo .fotosEquipo img {
+  gap: 3px;
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+/* HISTORIA */
+#historiaMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9c46a;
+  padding-bottom: 30px;
+}
+#historiaMain .todoComenzo {
+  background-color: #e76f51;
+  border: 8px solid #2a9d8f;
+}
+#historiaMain .todoComenzo h2 {
+  font-family: "Sono", sans-serif;
+  text-align: center;
+}
+#historiaMain .todoComenzo p {
+  text-align: center;
+  padding: 0 20px;
+}
+#historiaMain .todoComenzo .gridHistoria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+#historiaMain .todoComenzo .gridHistoria img {
+  width: 100px;
+  height: 100px;
+}
+#historiaMain .todoComenzo .gridHistoria img:hover {
+  transform: scale(2);
+}
+
+/* HOJA DE RUTA */
+#gridRuta {
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+}
+#gridRuta .rutaItem {
+  background: radial-gradient(#e9c46a, #e76f51);
+  border: 8px solid #2a9d8f;
+  margin: 5px;
+}
+#gridRuta .rutaItem h2 {
+  text-align: center;
+}
+#gridRuta .rutaItem .mapa iframe {
+  width: 250px;
+  height: 250px;
+}
+#gridRuta .rutaPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: visible;
+}
+#gridRuta .trayecto1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#gridRuta .trayecto2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#gridRuta .trayecto3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#gridRuta .trayecto4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#gridRuta .comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #e76f51;
+  grid-area: comentario;
+}
+
+/* CONTACTO */
+#contacto {
+  background-color: #e9c46a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacto .formulario {
+  width: 400px;
+  background-color: #e9c46a;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#contacto .formulario .flexContacto {
+  font-size: 15px;
+  border: 8px solid #2a9d8f;
+  margin: 5px;
+  background-color: #e76f51;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  background-color: gainsboro;
+  border: 10px solid #2a9d8f;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.footer .contactoFoot {
+  font-size: 15px;
+}
+.footer .contactoFoot h4 {
+  text-align: center;
+  /* background-color: ; */
+}
+.footer .ulFoot a {
+  text-decoration: none;
+}
+.footer .redesSociales a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
