@@ -5,6 +5,9 @@
 }
 
 
+
+
+
 /* REGLAS GENERALES */
 h1{
     font-family: 'Fasthand', cursive;
@@ -306,6 +309,275 @@ header{
 
     }
 }
+/* RESPONSIVE */
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+
+    body{
+        background-color: blue;
+    }
+
+    /* INDEX */
+    .flexItem {
+        
+        width: auto;
+        height: 400px;
+        text-align: center;
+        border: 5px solid #2a9d8f;
+        margin: 5px;
+        img{
+            height: 300px;
+        }
+        h3{
+            font-weight: bold;
+            font-family: 'Fasthand';
+            font-size: 35px;
+            color: black;
+           /*  align-items:  center; */
+        }
+        p{
+            font-size: 20px;
+        }
+        
+    }
+
+ 
+    .container h1{
+        font-size: 50px;
+    }
+    /* EQUIPO */
+    #equipoFlex {
+        h1{
+            font-size: 50px;
+        }
+        .secEquipo{
+            width: 600px;
+            height: 350px;
+            .fotosEquipo{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        
+        }
+    }
+
+    /* HISTORIA */
+    #historiaMain {
+        h1{
+            font-size: 50px;
+        }
+        .todoComenzo{
+            width: 600px;
+            .gridHistoria {
+                img{
+                width: 130px;
+                height: 140px;
+                transition: all .5s;
+                }
+                img:hover{
+                    transform: scale(3);
+                    z-index: 1;
+                }
+            }
+        }
+
+    }
+
+    /* HOJA DE RUTA */
+    #gridRuta{
+        align-items: center;
+        .rutaItem{
+            width: 600px;
+            .mapa iframe{
+                width: 250px;
+                height: 250px;
+            }
+        }
+        
+    }
+    
+    
+    /* CONTACTO */
+    .formulario{
+        width: 600px;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+
+
+    /* header */
+    header .logo{
+        display: flex;
+        flex-direction: row; 
+    }
+
+      
+    header .logo h2{
+        display: inline;
+        font-family: 'Fasthand';
+        font-size: 50px;
+        margin: auto;
+        text-align: center;
+        justify-content: space-around;
+    }
+    header .logo img.mobile{
+        display: none;
+    }
+    .logo img.desktop{
+        display: inline;
+        width: 220px;
+        height: 220px;
+    }
 
 
 
+
+
+
+    body{
+        background-color: blue;
+    }
+    header .logo{
+        display: flex;
+    }
+    header .logo h2{
+        display: inline;
+        font-family: 'Fasthand';
+        font-size: 50px;
+        text-align: center;
+    }
+    /* INDEX */
+    .flexItem {
+        
+        width: auto;
+        height: 400px;
+        text-align: center;
+        border: 5px solid #2a9d8f;
+        margin: 5px;
+        
+    }
+    .flexItem img{
+        height: 600px;
+    }
+    .flexItem h3{
+        font-weight: bold;
+        font-family: 'Fasthand';
+        font-size: 35px;
+        color: black;
+       /*  align-items:  center; */
+    }
+
+    .flexItem p{
+        font-size: 20px;
+    }
+    .container h1{
+        font-size: 50px;
+    }
+    /* EQUIPO */
+    #equipoFlex h1{
+        font-size: 50px;
+    }
+    #equipoFlex .secEquipo{
+        width: 800px;
+        height: 550px;
+        
+    }
+    #equipoFlex .secEquipo .fotosEquipo img{
+        width: 350px;
+        height: 350px;
+    }
+
+    /* HISTORIA */
+    #historiaMain h1{
+        font-size: 50px;
+    }
+    .todoComenzo{
+        width: 900px;
+    }
+    .gridHistoria img{
+        width: 200px;
+        height: 230px;
+        transition: all .5s;
+    }
+    .gridHistoria img:hover{
+        transform: scale(4);
+        z-index: 1;
+    }
+
+    /* HOJA DE RUTA */
+
+
+
+    #gridRuta{
+        display: grid;
+        grid-template-areas: 
+        "prin prin"
+        "track1 track2"
+        "track3 track4"
+        "coment coment";
+    }
+    #gridRuta .rutaPrincipal{
+        grid-area: prin;
+         display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        overflow:visible;
+    }
+    #gridRuta .trayecto1{
+        grid-area: track1;
+         display: flex;
+        flex-direction: column; 
+        margin: auto;
+         align-items: center; 
+        text-align: center;
+    }
+    #gridRuta .trayecto2{
+        grid-area: track2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #gridRuta .trayecto3{
+        grid-area: track3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #gridRuta .trayecto4{
+        grid-area: track4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #gridRuta .comentario{
+        grid-area: coment;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color:#e76f51;
+    }
+
+
+    .mapa iframe{
+        width: 400px;
+        height: 400px;
+    }
+
+    /*  CONTACTO  */
+    
+    .formulario{
+        width: 800px;
+    }
+
+}
