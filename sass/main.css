@@ -13,9 +13,27 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
-/* HEADER */
+/* colores principales */
+.bg-menu {
+  background-color: #606c38;
+}
+
+/* HEADER */ /* REGLAS GENERALES */
+h1 {
+  font-family: "Fasthand", cursive;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+/* colores principales */
+.bg-menu {
+  background-color: #606c38;
+}
+
 header {
-  background-color: #264653;
+  background-color: #606c38;
   background-image: url(../imgProyecto/pirineosPano.jpg);
   background-position: center;
   background-size: cover;
@@ -35,9 +53,9 @@ header .logo .desktop {
   display: none;
 }
 
-/* MAIN */
+/* INDEX */
 .contenedor {
-  background-color: #e9c46a;
+  background-color: #FEFAE0;
   padding-bottom: 30px;
 }
 .contenedor #carouselExampleIndicators {
@@ -52,50 +70,47 @@ header .logo .desktop {
   font-size: 18px;
 }
 .contenedor .grid {
-  display: grid;
-  grid-template-areas: "equipo historia" "ruta contacto";
-}
-.contenedor .grid .hojaDeRuta {
-  grid-area: ruta;
-}
-.contenedor .grid .contacto {
-  grid-area: contacto;
-}
-.contenedor .grid .historia {
-  grid-area: historia;
-}
-.contenedor .grid .equipo {
-  grid-area: equipo;
+  display: flex;
+  flex-direction: column;
 }
 .contenedor .grid .flexItem {
-  background-color: #e76f51;
+  background-color: #dda15e;
   overflow: auto;
-  display: inline;
+  display: flex;
+  flex-direction: row;
   width: auto;
   height: 200px;
   text-align: center;
-  border: 5px solid #2a9d8f;
-  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 15px;
 }
-.contenedor .grid .flexItem h3 {
+.contenedor .grid .flexItem .fotoIndex {
+  padding: 5px;
+  width: 200px;
+}
+.contenedor .grid .flexItem .fotoIndex a img {
+  width: auto;
+  height: 150px;
+}
+.contenedor .grid .flexItem .textoIndex {
+  width: 200px;
+}
+.contenedor .grid .flexItem .textoIndex h3 {
+  text-align: center;
   font-weight: bold;
   font-family: "Fasthand";
   font-size: 30px;
   color: black;
 }
-.contenedor .grid .flexItem img {
-  display: inline;
-  width: auto;
-  height: 150px;
-}
-.contenedor .grid .flexItem p {
+.contenedor .grid .flexItem .textoIndex p {
   font-size: 10px;
   overflow: hidden;
 }
 
 /* EQUIPO */
 #equipoFlex {
-  background-color: #e9c46a;
+  background-color: #FEFAE0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,12 +147,12 @@ header .logo .desktop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e9c46a;
+  background-color: #FEFAE0;
   padding-bottom: 30px;
 }
 #historiaMain .todoComenzo {
-  background-color: #e76f51;
-  border: 8px solid #2a9d8f;
+  width: 400px;
+  background-color: #dda15e;
 }
 #historiaMain .todoComenzo h2 {
   font-family: "Sono", sans-serif;
@@ -148,13 +163,14 @@ header .logo .desktop {
   padding: 0 20px;
 }
 #historiaMain .todoComenzo .gridHistoria {
+  padding-bottom: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
 }
 #historiaMain .todoComenzo .gridHistoria img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 #historiaMain .todoComenzo .gridHistoria img:hover {
   transform: scale(2);
@@ -162,7 +178,7 @@ header .logo .desktop {
 
 /* HOJA DE RUTA */
 #gridRuta {
-  background-color: #e9c46a;
+  background-color: #FEFAE0;
   display: flex;
   flex-direction: column;
 }
@@ -220,7 +236,7 @@ header .logo .desktop {
 
 /* CONTACTO */
 #contacto {
-  background-color: #e9c46a;
+  background-color: #FEFAE0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -243,8 +259,8 @@ header .logo .desktop {
 /* FOOTER */
 .footer {
   display: flex;
-  background-color: gainsboro;
-  border: 10px solid #2a9d8f;
+  background-color: #606c38;
+  border: 10px solid #283618;
   flex-flow: row;
   justify-content: space-around;
 }
@@ -252,44 +268,57 @@ header .logo .desktop {
   font-size: 15px;
 }
 .footer .contactoFoot h4 {
+  text-align: start;
+}
+.footer .menuFooter h4 {
   text-align: center;
-  /* background-color: ; */
 }
-.footer .ulFoot a {
+.footer .menuFooter .ulFoot li a {
   text-decoration: none;
+  color: #283618;
 }
-.footer .redesSociales a {
+.footer .redesSociales p a {
   text-decoration: none;
+  color: #283618;
 }
 
 /* RESPONSIVE */
-@media (max-width: 1023px) and (min-width: 768px) {
-  body {
-    background-color: blue;
-  }
+@media (min-width: 768px) and (max-width: 1023px) {
   /* INDEX */
-  .flexItem {
+  .contenedor .grid .flexItem {
     width: auto;
     height: 400px;
     text-align: center;
-    border: 5px solid #2a9d8f;
-    margin: 5px;
+    justify-content: space-around;
+    margin: 5px 10px;
   }
-  .flexItem img {
+  .contenedor .grid .flexItem .fotoIndex {
+    width: 250px;
+  }
+  .contenedor .grid .flexItem .fotoIndex a img {
+    width: auto;
+    height: 250px;
+  }
+  .contenedor .grid .flexItem .textoIndex {
+    width: 250px;
+  }
+  .contenedor .grid .flexItem .textoIndex h3 {
+    font-size: 50px;
+  }
+  .contenedor .grid .flexItem .textoIndex p {
+    font-size: 20px;
+  }
+  .contenedor .grid .flexItem a img {
     height: 300px;
   }
-  .flexItem h3 {
+  .contenedor .grid .flexItem h3 {
     font-weight: bold;
     font-family: "Fasthand";
     font-size: 35px;
     color: black;
-    /*  align-items:  center; */
   }
-  .flexItem p {
+  .contenedor .grid .flexItem p {
     font-size: 20px;
-  }
-  .container h1 {
-    font-size: 50px;
   }
   /* EQUIPO */
   #equipoFlex h1 {
@@ -341,6 +370,10 @@ header .logo .desktop {
     display: flex;
     flex-direction: row;
   }
+  header .logo {
+    display: flex;
+    justify-content: center;
+  }
   header .logo h2 {
     display: inline;
     font-family: "Fasthand";
@@ -352,46 +385,27 @@ header .logo .desktop {
   header .logo img.mobile {
     display: none;
   }
-  .logo img.desktop {
+  header .logo img.desktop {
     display: inline;
     width: 220px;
     height: 220px;
   }
-  body {
-    background-color: blue;
-  }
-  header .logo {
-    display: flex;
-  }
-  header .logo h2 {
-    display: inline;
-    font-family: "Fasthand";
-    font-size: 50px;
-    text-align: center;
-  }
   /* INDEX */
-  .flexItem {
-    width: auto;
-    height: 400px;
-    text-align: center;
-    border: 5px solid #2a9d8f;
-    margin: 5px;
+  .contenedor .grid {
+    display: grid;
+    grid-template-areas: "equipo mapa" "historia contacto";
   }
-  .flexItem img {
-    height: 600px;
+  .contenedor .grid .flexItem.equipo {
+    grid-area: equipo;
   }
-  .flexItem h3 {
-    font-weight: bold;
-    font-family: "Fasthand";
-    font-size: 35px;
-    color: black;
-    /*  align-items:  center; */
+  .contenedor .grid .flexItem.historia {
+    grid-area: historia;
   }
-  .flexItem p {
-    font-size: 20px;
+  .contenedor .grid .flexItem.hojaDeRuta {
+    grid-area: mapa;
   }
-  .container h1 {
-    font-size: 50px;
+  .contenedor .grid .flexItem.indexContacto {
+    grid-area: contacto;
   }
   /* EQUIPO */
   #equipoFlex h1 {
@@ -412,13 +426,13 @@ header .logo .desktop {
   .todoComenzo {
     width: 900px;
   }
-  .gridHistoria img {
+  #historiaMain .todoComenzo .gridHistoria img {
     width: 200px;
     height: 230px;
     transition: all 0.5s;
   }
-  .gridHistoria img:hover {
-    transform: scale(4);
+  #historiaMain .todoComenzo .gridHistoria img:hover {
+    transform: scale(3);
     z-index: 1;
   }
   /* HOJA DE RUTA */

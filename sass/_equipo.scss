@@ -1,0 +1,37 @@
+/* EQUIPO */
+
+
+#equipoFlex{
+    background-color: $backg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .secEquipo{
+        width: 350px;
+        height: 350px;
+        overflow: scroll;
+        background-color: #e76f51;
+        border: 5px solid #2a9d8f;
+        margin: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h2{
+            font-family: 'Sono', sans-serif;
+            text-align: center;
+        }
+        .fotosEquipo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            img{
+                gap: 3px;
+                padding: 5px;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+    }
+    
+}

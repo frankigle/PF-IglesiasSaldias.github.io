@@ -1,0 +1,17 @@
+/* REGLAS GENERALES */
+h1{
+    font-family: 'Fasthand', cursive;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+}
+/* colores principales */
+$backg: #FEFAE0;
+$encabezado : #606c38;
+$bordes : #283618;
+$conten : #dda15e;
+$pie : #bc6c25;
+.bg-menu{
+    background-color: $encabezado;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- linkeado hoja de estilo -->
+   <!--  <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./sass/main.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <!-- google fonts -->
@@ -39,7 +40,7 @@
         </div>
     </header>
     <!-- barra menu -->
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-menu ">
         <div class="container-fluid">
           <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,24 +97,46 @@
         <p>Gracias por visitar nuestro sitio, desde aqui podra ingresar a todo nuestro contenido.</p>
         <div class="grid">
             <div class="flexItem equipo">
-                <a href="./html/equipo.html"><img src="./imgProyecto/fotos/bicisCarpaRio.jpg" alt="equipo"></a>
-                <h3>Equipo</h3>
-                <p>Aqui Podra conocer Nuestro Equipo</p> 
+                <div class="fotoIndex">
+                    <a href="./html/equipo.html"><img src="./imgProyecto/fotos/bicisCarpaRio.jpg" alt="equipo"></a>
+                </div>
+                <div class="textoIndex">
+                    <h3>Equipo</h3>
+                    <p>Aqui Podra conocer Nuestro Equipo</p> 
+                </div>
             </div> 
             <div class="flexItem historia">
-                <a href="./html/historia.html"><img src="./imgProyecto/fotos/volando.jpg" alt="historia">  </a> 
-                <h3>Historia</h3>
-                <p>Conoscame un poco mas, desde mis primeros viajes hasta el dia de hoy</p>
+                <div class="fotoIndex">
+                    <a href="./html/historia.html"><img src="./imgProyecto/fotos/volando.jpg" alt="historia">  </a> 
+                </div>
+                <div class="textoIndex">
+                 <h3>Historia</h3>
+                 <p>Conoscame un poco mas, desde mis primeros viajes hasta el dia de hoy</p>
+                </div>
+
+
             </div>
             <div class="flexItem hojaDeRuta">
-                <a href="./html/hojaDeRuta.html"><img src="./imgProyecto/EUROVELO.jpg" alt="hojaDeRuta"></a>
-                <h3>Hoja de Ruta</h3>
-                <p>Ruta principal y trayectos, segui mi viaje con estos mapas</p>
+                <div class="fotoIndex">
+                    <a href="./html/hojaDeRuta.html"><img src="./imgProyecto/EUROVELO.jpg" alt="hojaDeRuta"></a>
+                </div>
+                <div class="textoIndex">
+                    <h3>Hoja de Ruta</h3>
+                    <p>Ruta principal y trayectos, segui mi viaje con estos mapas</p>
+                </div>
+
+
             </div>
             <div class="flexItem indexContacto">
-                <a href="./html/contacto.html"><img src="./imgProyecto/Zapatofono.jpg" alt="Contacto"></a>
-                <h3>Contacto</h3>
-                <p>Tenes alguna duda? alguna sugerencia? todo sera Bienvenido, contactanos Aqui</p>
+                <div class="fotoIndex">
+                    <a href="./html/contacto.html"><img src="./imgProyecto/Zapatofono.jpg" alt="Contacto"></a>
+                </div>
+                <div class="textoIndex">
+                    <h3>Contacto</h3>
+                    <p>Tenes alguna duda? alguna sugerencia? todo sera Bienvenido, contactanos Aqui</p>
+                </div>
+
+
             </div>
         </div>
         
@@ -136,7 +159,7 @@
             <p>Telefono: : 03327-442721</p>
             <p>Direccion: Av.Libertador 1234</p>
         </div>
-        <div>
+        <div class="menuFooter">
             <h4>Menu</h4>
             <ul class="ulFoot">
                 <li><a href="./index.html">Menu</a></li>

@@ -1,0 +1,39 @@
+/* FOOTER */
+
+
+.footer{
+    display: flex;
+    background-color: $encabezado;
+    border: 10px solid $bordes;
+    flex-flow: row;
+    justify-content: space-around;
+    .contactoFoot{
+        font-size: 15px;
+        h4{
+            text-align:start;
+        } 
+    }
+    .menuFooter {
+        h4{
+            text-align: center;
+        }
+        .ulFoot {
+            li{
+                a{
+                 text-decoration: none;
+                 color: $bordes;
+                
+                }
+            }
+        }
+    }
+    .redesSociales{
+        p{
+            a{
+             text-decoration: none;
+              color: $bordes;
+            }
+
+        }
+    }
+}

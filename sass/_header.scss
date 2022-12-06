@@ -1,0 +1,26 @@
+/* HEADER */
+@import 'vars';
+header{
+    background-color: $encabezado;
+    background-image: url(../imgProyecto/pirineosPano.jpg) ;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    .logo{
+        img{
+            padding: auto;
+            width: 150px;
+            height: 150px;
+            align-items: center;
+        }
+        h2{
+            font-family: 'Fasthand';
+            display: none;
+        }
+        .desktop{
+            display: none;
+        }
+
+
+    }
+}

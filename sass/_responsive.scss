@@ -1,40 +1,55 @@
 /* RESPONSIVE */
 
 
-@media (max-width: 1023px) and (min-width: 768px) {
-
-    body{
-        background-color: blue;
-    }
+@media (min-width: 768px)  and (max-width: 1023px) {
 
     /* INDEX */
-    .flexItem {
-        
-        width: auto;
-        height: 400px;
-        text-align: center;
-        border: 5px solid #2a9d8f;
-        margin: 5px;
-        img{
-            height: 300px;
-        }
-        h3{
-            font-weight: bold;
-            font-family: 'Fasthand';
-            font-size: 35px;
-            color: black;
-           /*  align-items:  center; */
-        }
-        p{
-            font-size: 20px;
-        }
-        
-    }
+    .contenedor {
+        .grid {
+            .flexItem {
+             width: auto;
+             height: 400px;
+             text-align: center;
+             justify-content: space-around;
+             margin: 5px 10px;
+             .fotoIndex{
+                width: 250px;
+                a{
+                    img{
+                        width: auto;
+                        height: 250px;
+                    }
+                }
+             }
+             .textoIndex{
+                width: 250px;
+                h3{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 20px;
+                }
+             }
 
- 
-    .container h1{
-        font-size: 50px;
+
+             a{
+                 img{
+                        height: 300px;
+                    }
+                }
+              h3{
+                 font-weight: bold;
+                  font-family: 'Fasthand';
+                  font-size: 35px;
+                   color: black;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
     }
+        
     /* EQUIPO */
     #equipoFlex {
         h1{
@@ -107,66 +122,50 @@
     }
 
       
-    header .logo h2{
-        display: inline;
-        font-family: 'Fasthand';
-        font-size: 50px;
-        margin: auto;
-        text-align: center;
-        justify-content: space-around;
-    }
-    header .logo img.mobile{
-        display: none;
-    }
-    .logo img.desktop{
-        display: inline;
-        width: 220px;
-        height: 220px;
-    }
-
-
-
-
-
-
-    body{
-        background-color: blue;
-    }
-    header .logo{
-        display: flex;
-    }
-    header .logo h2{
-        display: inline;
-        font-family: 'Fasthand';
-        font-size: 50px;
-        text-align: center;
+    header{
+        .logo{
+            display: flex;
+            justify-content: center;
+            h2{
+                display: inline;
+                font-family: 'Fasthand';
+                font-size: 50px;
+                margin: auto;
+                text-align: center;
+                justify-content: space-around;
+            }
+            img.mobile{
+                display: none;
+            }
+            img.desktop{
+                display: inline;
+                width: 220px;
+                height: 220px;
+            }
+        }
     }
     /* INDEX */
-    .flexItem {
-        
-        width: auto;
-        height: 400px;
-        text-align: center;
-        border: 5px solid #2a9d8f;
-        margin: 5px;
-        
-    }
-    .flexItem img{
-        height: 300px;
-    }
-    .flexItem h3{
-        font-weight: bold;
-        font-family: 'Fasthand';
-        font-size: 35px;
-        color: black;
-       /*  align-items:  center; */
-    }
+    .contenedor{
+        .grid{
+            display: grid;
+            grid-template-areas: 
+            "equipo mapa"
+            "historia contacto"
+            ;
+            .flexItem.equipo{
+                grid-area: equipo;
+            }
+            .flexItem.historia{
+                grid-area: historia;
+            }
+            .flexItem.hojaDeRuta{
+                grid-area: mapa;
+            }
+            .flexItem.indexContacto{
+                grid-area: contacto;
+            }
 
-    .flexItem p{
-        font-size: 20px;
-    }
-    .container h1{
-        font-size: 50px;
+        }
     }
     /* EQUIPO */
     #equipoFlex h1{
@@ -189,13 +188,13 @@
     .todoComenzo{
         width: 900px;
     }
-    .gridHistoria img{
+    #historiaMain .todoComenzo .gridHistoria img{
         width: 200px;
         height: 230px;
         transition: all .5s;
     }
-    .gridHistoria img:hover{
-        transform: scale(4);
+    #historiaMain .todoComenzo .gridHistoria img:hover{
+        transform: scale(3);
         z-index: 1;
     }
 
