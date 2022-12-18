@@ -5,6 +5,9 @@
 
     /* INDEX */
     .contenedor {
+        h1{
+            font-size: map-get($h1-r, tablet );
+        }
         .grid {
             .flexItem {
              width: auto;
@@ -82,7 +85,7 @@
                 transition: all .5s;
                 }
                 img:hover{
-                    transform: scale(3);
+                    transform: scale(1.7);
                     z-index: 1;
                 }
             }
@@ -116,20 +119,15 @@
 
 
     /* header */
-    header .logo{
-        display: flex;
-        flex-direction: row; 
-    }
-
-      
     header{
         .logo{
+            flex-direction: row; 
             display: flex;
             justify-content: center;
             h2{
                 display: inline;
                 font-family: 'Fasthand';
-                font-size: 50px;
+                font-size: 80px;
                 margin: auto;
                 text-align: center;
                 justify-content: space-around;
@@ -146,6 +144,10 @@
     }
     /* INDEX */
     .contenedor{
+        h1{
+            font-size: map-get($h1-r, desktop );
+            font-weight: 600;
+        }
         .grid{
             display: grid;
             grid-template-areas: 
@@ -182,21 +184,28 @@
     }
 
     /* HISTORIA */
-    #historiaMain h1{
-        font-size: 50px;
+    #historiaMain {
+        h1{
+            font-size: 50px;
+        }
+        .todoComenzo{
+           width: 900px;
+           .gridHistoria{
+                img{
+                 width: 200px;
+                 height: 230px;
+                 transition: all .5s;
+                }
+                img:hover{
+                 transform: scale(1.7);
+                 z-index: 1;
+                }
+            }
+        }
+
+        
     }
-    .todoComenzo{
-        width: 900px;
-    }
-    #historiaMain .todoComenzo .gridHistoria img{
-        width: 200px;
-        height: 230px;
-        transition: all .5s;
-    }
-    #historiaMain .todoComenzo .gridHistoria img:hover{
-        transform: scale(3);
-        z-index: 1;
-    }
+
 
     /* HOJA DE RUTA */
 
@@ -268,4 +277,13 @@
         width: 800px;
     }
 
+    /* footer */
+
+    .footer{
+        justify-content: space-between;
+    }
+
 }
+
+
+

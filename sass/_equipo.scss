@@ -6,12 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     .secEquipo{
         width: 350px;
         height: 350px;
         overflow: scroll;
         background-color: #e76f51;
         border: 5px solid #2a9d8f;
+        border-radius: 15px;
         margin: 5px;
         flex-direction: row;
         flex-wrap: wrap;

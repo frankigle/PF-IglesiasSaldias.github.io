@@ -7,11 +7,12 @@ header{
     background-size: cover;
     align-items: center;
     .logo{
+        display: flex;
+        justify-content: center;
         img{
             padding: auto;
             width: 150px;
             height: 150px;
-            align-items: center;
         }
         h2{
             font-family: 'Fasthand';
