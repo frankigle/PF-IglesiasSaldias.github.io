@@ -1,6 +1,6 @@
 /* EQUIPO */
 
-
+@import 'vars';
 #equipoFlex{
     background-color: $backg;
     display: flex;
@@ -11,8 +11,8 @@
         width: 350px;
         height: 350px;
         overflow: scroll;
-        background-color: #e76f51;
-        border: 5px solid #2a9d8f;
+        background-color: $conten;
+        border: 5px solid $bordes;
         border-radius: 15px;
         margin: 5px;
         flex-direction: row;
@@ -20,6 +20,7 @@
         h2{
             font-family: 'Sono', sans-serif;
             text-align: center;
+            font-size: map-get($map: $h2-r, $key: mob2);
         }
         .fotosEquipo{
             display: flex;

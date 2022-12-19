@@ -6,7 +6,7 @@
     /* INDEX */
     .contenedor {
         h1{
-            font-size: map-get($h1-r, tablet );
+            font-size: map-get($h1-r, tablet1 );
         }
         .grid {
             .flexItem {
@@ -27,7 +27,7 @@
              .textoIndex{
                 width: 250px;
                 h3{
-                    font-size: 50px;
+                    font-size: map-get($map: $h3-r, $key:   tablet3 );
                 }
                 p{
                     font-size: 20px;
@@ -43,7 +43,7 @@
               h3{
                  font-weight: bold;
                   font-family: 'Fasthand';
-                  font-size: 35px;
+                  font-size: map-get($map: $h3-r, $key: tablet3);
                    color: black;
                 }
                 p{
@@ -56,7 +56,7 @@
     /* EQUIPO */
     #equipoFlex {
         h1{
-            font-size: 50px;
+            font-size: map-get($map: $h1-r, $key: tablet1 );
         }
         .secEquipo{
             width: 600px;
@@ -74,7 +74,7 @@
     /* HISTORIA */
     #historiaMain {
         h1{
-            font-size: 50px;
+            font-size: map-get($map: $h1-r, $key: tablet1 );
         }
         .todoComenzo{
             width: 600px;
@@ -127,7 +127,7 @@
             h2{
                 display: inline;
                 font-family: 'Fasthand';
-                font-size: 80px;
+                font-size: map-get($map: $h2-r, $key: desktop2);
                 margin: auto;
                 text-align: center;
                 justify-content: space-around;
@@ -145,7 +145,7 @@
     /* INDEX */
     .contenedor{
         h1{
-            font-size: map-get($h1-r, desktop );
+            font-size: map-get($h1-r, desktop1 );
             font-weight: 600;
         }
         .grid{
@@ -170,23 +170,27 @@
         }
     }
     /* EQUIPO */
-    #equipoFlex h1{
-        font-size: 50px;
-    }
-    #equipoFlex .secEquipo{
-        width: 800px;
-        height: 550px;
-        
-    }
-    #equipoFlex .secEquipo .fotosEquipo img{
-        width: 350px;
-        height: 350px;
+    #equipoFlex{
+
+        h1{
+         font-size: map-get($map: $h1-r, $key: desktop1);
+        }
+        .secEquipo{
+            overflow: auto;
+            width: 85%;
+            height: 550px;
+            .fotosEquipo img{
+              width: 350px;
+              height: 350px;
+            }
+            
+        }
     }
 
     /* HISTORIA */
     #historiaMain {
         h1{
-            font-size: 50px;
+            font-size: map-get($map: $h1-r, $key: desktop1);
         }
         .todoComenzo{
            width: 900px;
@@ -221,7 +225,7 @@
     }
     #gridRuta .rutaPrincipal{
         grid-area: prin;
-         display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center; 
         text-align: center;
@@ -229,10 +233,10 @@
     }
     #gridRuta .trayecto1{
         grid-area: track1;
-         display: flex;
+        display: flex;
         flex-direction: column; 
         margin: auto;
-         align-items: center; 
+        align-items: center; 
         text-align: center;
     }
     #gridRuta .trayecto2{
@@ -262,7 +266,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color:#e76f51;
+        background-color: $backg;
     }
 
 

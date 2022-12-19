@@ -11,7 +11,7 @@
     h1{
         font-family: 'Fasthand';
         text-align: center;
-        font-size: map-get($h1-r, mov );
+        font-size: map-get($h1-r, mob );
     }
     p{
         text-align: center;
@@ -51,7 +51,7 @@
                     text-align: center;
                     font-weight: bold;
                     font-family: 'Fasthand';
-                    font-size: map-get($h3-r, mov3 );
+                    font-size: map-get($h3-r, mob3 );
                     color: black;
                 }
     

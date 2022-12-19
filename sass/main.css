@@ -75,7 +75,6 @@ header .logo .desktop {
 .contenedor h1 {
   font-family: "Fasthand";
   text-align: center;
-  font-size: 50px;
 }
 .contenedor p {
   text-align: center;
@@ -122,7 +121,24 @@ header .logo .desktop {
   overflow: hidden;
 }
 
-/* EQUIPO */
+/* EQUIPO */ /* REGLAS GENERALES */
+h1 {
+  font-family: "Fasthand", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.75rem;
+}
+
+/* colores principales */
+.bg-menu {
+  background-color: #606c38;
+}
+
+/* Fontsize */
 #equipoFlex {
   background-color: #FEFAE0;
   display: flex;
@@ -133,8 +149,8 @@ header .logo .desktop {
   width: 350px;
   height: 350px;
   overflow: scroll;
-  background-color: #e76f51;
-  border: 5px solid #2a9d8f;
+  background-color: #dda15e;
+  border: 5px solid #283618;
   border-radius: 15px;
   margin: 5px;
   flex-direction: row;
@@ -143,6 +159,7 @@ header .logo .desktop {
 #equipoFlex .secEquipo h2 {
   font-family: "Sono", sans-serif;
   text-align: center;
+  font-size: 40px;
 }
 #equipoFlex .secEquipo .fotosEquipo {
   display: flex;
@@ -332,7 +349,7 @@ header .logo .desktop {
   .contenedor .grid .flexItem h3 {
     font-weight: bold;
     font-family: "Fasthand";
-    font-size: 35px;
+    font-size: 50px;
     color: black;
   }
   .contenedor .grid .flexItem p {
@@ -340,7 +357,7 @@ header .logo .desktop {
   }
   /* EQUIPO */
   #equipoFlex h1 {
-    font-size: 50px;
+    font-size: 75px;
   }
   #equipoFlex .secEquipo {
     width: 600px;
@@ -352,7 +369,7 @@ header .logo .desktop {
   }
   /* HISTORIA */
   #historiaMain h1 {
-    font-size: 50px;
+    font-size: 75px;
   }
   #historiaMain .todoComenzo {
     width: 600px;
@@ -392,7 +409,7 @@ header .logo .desktop {
   header .logo h2 {
     display: inline;
     font-family: "Fasthand";
-    font-size: 80px;
+    font-size: 85px;
     margin: auto;
     text-align: center;
     justify-content: space-around;
@@ -428,10 +445,11 @@ header .logo .desktop {
   }
   /* EQUIPO */
   #equipoFlex h1 {
-    font-size: 50px;
+    font-size: 100px;
   }
   #equipoFlex .secEquipo {
-    width: 800px;
+    overflow: auto;
+    width: 85%;
     height: 550px;
   }
   #equipoFlex .secEquipo .fotosEquipo img {
@@ -440,7 +458,7 @@ header .logo .desktop {
   }
   /* HISTORIA */
   #historiaMain h1 {
-    font-size: 50px;
+    font-size: 100px;
   }
   #historiaMain .todoComenzo {
     width: 900px;
@@ -502,7 +520,7 @@ header .logo .desktop {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #e76f51;
+    background-color: #FEFAE0;
   }
   .mapa iframe {
     width: 400px;
