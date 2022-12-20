@@ -215,11 +215,12 @@ p {
   flex-direction: column;
 }
 #gridRuta .rutaItem {
-  background: radial-gradient(#e9c46a, #e76f51);
-  border: 8px solid #2a9d8f;
+  background: radial-gradient(#dda15e, #bc6c25);
+  border: 8px solid #283618;
   margin: 5px;
+  overflow: scroll;
 }
-#gridRuta .rutaItem h1 h2 {
+#gridRuta .rutaItem h2 {
   text-align: center;
 }
 #gridRuta .rutaItem .mapa iframe {
@@ -297,6 +298,7 @@ p {
   justify-content: space-around;
 }
 .footer .contactoFoot {
+  padding-left: 10px;
   font-size: 15px;
 }
 .footer .contactoFoot h4 {
@@ -308,6 +310,9 @@ p {
 .footer .menuFooter .ulFoot li a {
   text-decoration: none;
   color: #283618;
+}
+.footer .redesSociales {
+  padding-right: 15px;
 }
 .footer .redesSociales p a {
   text-decoration: none;
@@ -527,7 +532,7 @@ p {
     height: 400px;
   }
   /*  CONTACTO  */
-  .formulario {
+  #contacto .formulario {
     width: 800px;
   }
   /* footer */

@@ -7,10 +7,10 @@
     flex-direction: column;
     
     .rutaItem{
-        background: radial-gradient(#e9c46a,#e76f51 );
-        border: 8px solid #2a9d8f;
+        background: radial-gradient($conten ,$pie );
+        border: 8px solid $bordes;
         margin: 5px;
-        h1
+        overflow: scroll;
         h2{
             text-align: center;
         }
@@ -21,7 +21,7 @@
         
     }
     .rutaPrincipal{
-    
+        
         display: flex;
         flex-direction: column;
         align-items: center;
